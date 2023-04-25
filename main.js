@@ -7,6 +7,7 @@ form.addEventListener('submit', function(e) {
   const valorB = parseInt(campoB.value)
 
   if (valorB > valorA) {
+    alert('Enviado com sucesso!')
   } else {
     alert('O valor do campo B deve ser maior que o valor do campo A.')
     e.preventDefault()
