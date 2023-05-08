@@ -7,7 +7,6 @@
 }
 
 .container{
-  background-color: #ccc;
   max-width: 700px;
   margin: 50px auto 0 auto;
   padding: 20px;
@@ -54,8 +53,29 @@ button{
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-weight: bold;
 }
 
-button{
+button:hover{
   background-color: #0069d9;
+}
+
+ul{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+ul li{
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5em;
+}
+
+ul li button{
+  background-color: rgb(252, 41, 41);
+}
+
+ul li button:hover{
+  background-color: rgb(211, 8, 8);
 }
