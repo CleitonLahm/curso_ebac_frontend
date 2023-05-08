@@ -68,14 +68,14 @@ ul{
 
 ul li{
   display: flex;
-  justify-content: space-around;
   font-size: 1.5em;
+  margin-left: 40px;
+  margin-top: 20px;
 }
 
-ul li button{
-  background-color: rgb(252, 41, 41);
+.line {
+  text-decoration: line-through;
 }
 
-ul li button:hover{
-  background-color: rgb(211, 8, 8);
-}
+
+
