@@ -64,7 +64,7 @@ section {
   @include product-button;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: $breakpoint-lg) {
   .container {
       max-width: 80%;
   }
@@ -75,7 +75,7 @@ section {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $breakpoint-md) {
   .products {
       display: block;
   }
