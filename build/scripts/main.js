@@ -1,0 +1,1 @@
+function mudaCor(){document.querySelector("header h1").style.color="blue"}mudaCor();

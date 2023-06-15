@@ -1,5 +1,19 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
+const uglify = require('gulp-uglify');
+const imagemin = require('gulp-imagemin');
+
+function comprimeImages() {
+  return gulp.src('./source/images/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('./build/images'))
+}
+
+function comprimeJavascript(){
+  return gulp.src('./source/scripts/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('./build/scripts'));
+}
 
 function compilaSass() {
   return gulp.src('./source/styles/*.scss')
@@ -7,4 +21,8 @@ function compilaSass() {
     .pipe(gulp.dest('./build/styles'));
 }
 
-exports.compilaSass = compilaSass()
+function build() {
+  gulp.series(compilaSass, comprimeJavascript, comprimeImages)();
+}
+
+gulp.task('build', build);
