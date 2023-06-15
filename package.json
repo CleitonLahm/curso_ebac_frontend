@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/CleitonLahm/curso_ebac_frontend_exercicios#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.63.4"
   }
 }
