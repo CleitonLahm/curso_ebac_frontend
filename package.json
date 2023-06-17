@@ -1,0 +1,23 @@
+{
+  "name": "curso_ebac_frontend_exercicios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "less": "less-watch-compiler ./source/styles ./build/styles main.less",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CleitonLahm/curso_ebac_frontend_exercicios.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CleitonLahm/curso_ebac_frontend_exercicios/issues"
+  },
+  "homepage": "https://github.com/CleitonLahm/curso_ebac_frontend_exercicios#readme",
+  "devDependencies": {
+    "less": "^4.1.3"
+  }
+}
