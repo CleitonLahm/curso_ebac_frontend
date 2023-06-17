@@ -1,10 +1,12 @@
-@use 'reset';
-@use 'variaveis';
-@use 'breakpoints';
-@use 'mixins';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
 
 body {
-  background-color: variaveis.$bk-color;
+  background-color: #f5f6fa;
 }
 
 li {
@@ -18,7 +20,7 @@ li {
 }
 
 header {
-  background-color: variaveis.$cor-destaque1;
+  background-color: #182C61;
   position: sticky;
   top: 0;
   left: 0;
@@ -64,27 +66,35 @@ section {
 }
 
 .product-button {
-  @include mixins.product-button;
+  display: block;
+  background-color: #44bd32;
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 8px;
+  margin-top: 8px;
+  text-decoration: none;
+}
+.product-button:hover {
+  background-color: #278a18;
 }
 
-
-@media screen and (max-width: breakpoints.$breakpoint-lg) {
+@media screen and (max-width: 1023px) {
   .container {
-      max-width: 80%;
+    max-width: 80%;
   }
-
   .products {
-      grid-template-columns: repeat(2, 48.5%);
-      column-gap: 3%;
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .products {
+    display: block;
+  }
+  .product-item {
+    margin-bottom: 32px;
   }
 }
 
-@media screen and (max-width: breakpoints.$breakpoint-md) {
-  .products {
-      display: block;
-  }
-
-  .product-item  {
-      margin-bottom: 32px;
-  }
-}
+/*# sourceMappingURL=main.css.map */
